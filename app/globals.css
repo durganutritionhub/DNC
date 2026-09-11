@@ -1,0 +1,42 @@
+@import "tailwindcss";
+@config "../tailwind.config.ts";
+
+:root {
+  --background: #FAFDF9;
+  --foreground: #1F2A1F;
+}
+
+@theme {
+  --color-background: #FAFDF9;
+  --color-primary-green: #7FBF8C;
+  --color-accent-green: #3E7C4A;
+  --color-text-dark: #1F2A1F;
+  --color-text-muted: #6B7A6E;
+}
+
+/* Locale-based typography mapping */
+body.font-en {
+  font-family: var(--font-inter), sans-serif;
+}
+body.font-te {
+  font-family: var(--font-telugu), sans-serif;
+}
+body.font-hi {
+  font-family: var(--font-hindi), sans-serif;
+}
+
+/* Apply Poppins to headings natively in English, fall back gracefully for others */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-poppins), inherit;
+}
+body.font-te h1, body.font-te h2, body.font-te h3, body.font-te h4, body.font-te h5, body.font-te h6 {
+  font-family: var(--font-telugu), sans-serif;
+}
+body.font-hi h1, body.font-hi h2, body.font-hi h3, body.font-hi h4, body.font-hi h5, body.font-hi h6 {
+  font-family: var(--font-hindi), sans-serif;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+}

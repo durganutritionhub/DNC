@@ -1,0 +1,520 @@
+{
+  "Navbar": {
+    "home": "Home",
+    "about": "About DNC",
+    "services": "Programs",
+    "testimonials": "Success Stories",
+    "coach": "Our Coach",
+    "contact": "Contact",
+    "language": "Language"
+  },
+  "Hero": {
+    "eyebrow": "Nutrition & Wellness",
+    "heading": "Better Nutrition. Better Health. Better Life.",
+    "subtext": "Build healthier eating habits with personalized nutrition guidance, practical wellness strategies, and support designed around your lifestyle and health goals.",
+    "cta_primary": "Get Started",
+    "cta_outline": "Explore Programs"
+  },
+  "About": {
+    "eyebrow": "Simple Nutrition for a Healthier Life",
+    "heading": "About DNC",
+    "subtext": "DNC (Durga Nutrition and Centre) focuses on helping people understand the importance of nutrition and healthy food habits.Our approach is based on making better food choices, understanding individual nutritional needs, and building healthy habits that can be followed for the long term.",
+    "why_choose_us": "Why Choose DNC?",
+    "bullet_1": "Personalized nutrition guidance based on your needs",
+    "bullet_2": "Practical and sustainable healthy eating habits",
+    "bullet_3": "One-on-one wellness guidance and support",
+    "bullet_4": "A holistic approach to nutrition and overall well-being",
+    "faq_heading": "Frequently Asked Questions",
+    "faqs": [
+      {
+        "question": "What is the core philosophy of DNC Wellness Centre?",
+        "answer": "DNC focuses on sustainable, evidence-based nutrition and lifestyle changes rather than quick fixes or restrictive crash diets."
+      },
+      {
+        "question": "Who can benefit from DNC nutrition guidance?",
+        "answer": "Anyone looking to improve their health, manage weight, build better eating habits, or support specific dietary requirements."
+      },
+      {
+        "question": "Is DNC suitable for beginners who know very little about nutrition?",
+        "answer": "Yes! We simplify nutrition science into practical, easy-to-follow daily habits tailored to your current lifestyle."
+      },
+      {
+        "question": "Do I need to buy expensive imported food or special supplements?",
+        "answer": "No. We emphasize locally available, whole, nutritious foods that fit naturally into your everyday home meals."
+      },
+      {
+        "question": "How does DNC ensure long-term, sustainable results?",
+        "answer": "By focusing on behavioral habits, mindful eating, and 1-on-1 personalized guidance that fits into your long-term routine."
+      }
+    ]
+  },
+  "Stats": {
+    "eyebrow": "Our Impact",
+    "heading": "Real Results Through Guidance",
+    "subtext": "Helping individuals build healthy eating habits and make sustainable lifestyle changes.",
+    "happy_clients": "Happy Clients",
+    "people_enrolled": "People Enrolled",
+    "satisfaction": "Client Satisfaction"
+  },
+  "Services": {
+    "eyebrow": "Our Programs",
+    "heading": "Nutrition & Wellness Programs",
+    "subtext": "Explore practical nutrition and wellness programs designed to help you develop healthier habits and work toward your personal health goals.",
+    "learn_more": "Learn More",
+    "program_label": "PROGRAM",
+    "items": {
+      "1": {
+        "title": "Weight Loss & Fitness",
+        "description": "Learn practical nutrition and lifestyle habits to support healthy weight management and an active lifestyle.",
+        "testimonial_quote": "Lost 8 kg in 3 months without giving up my regular home meals. Coach Durga strategies made it so effortless!",
+        "testimonial_author": "Priya R., Hyderabad"
+      },
+      "2": {
+        "title": "Nutrition & Supplements",
+        "description": "Understand balanced nutrition, essential nutrients, and responsible supplement choices to support your overall wellness.",
+        "testimonial_quote": "Cleared up my vitamin deficiencies naturally through food first, taking essential supplements recommended after my blood work.",
+        "testimonial_author": "Anand K., Bengaluru"
+      },
+      "3": {
+        "title": "Mindful Eating",
+        "description": "Develop healthier eating habits by understanding hunger, food choices, portion awareness, and mindful eating.",
+        "testimonial_quote": "I stopped late-night stress snacking completely. Learning to listen to my body true hunger cues changed everything.",
+        "testimonial_author": "Sneha M., Mumbai"
+      },
+      "4": {
+        "title": "Personalized Nutrition",
+        "description": "Get nutrition guidance tailored to your lifestyle, food preferences, individual needs, and personal health goals.",
+        "testimonial_quote": "The 1-on-1 guidance fit perfectly into my busy travel schedule. Having direct WhatsApp coaching kept me on track!",
+        "testimonial_author": "Rajesh V., Visakhapatnam"
+      }
+    },
+    "faq_heading": "Program FAQs",
+    "faqs": [
+      {
+        "question": "What types of wellness programs does DNC offer?",
+        "answer": "We offer targeted programs covering Weight Loss & Fitness, Nutrition & Supplements, Mindful Eating, and Personalized Nutrition."
+      },
+      {
+        "question": "Are the nutrition plans customized for individual dietary preferences?",
+        "answer": "Absolutely. Every plan is customized according to your food preferences, regional diet, cultural choices, and daily schedule."
+      },
+      {
+        "question": "How long does a typical program last?",
+        "answer": "Program durations vary based on personal goals, ranging from short-term habit-building modules to multi-month comprehensive coaching."
+      },
+      {
+        "question": "Will I receive ongoing support and check-ins during my program?",
+        "answer": "Yes. You receive dedicated 1-on-1 progress monitoring, guidance, and plan adjustments throughout your program journey."
+      },
+      {
+        "question": "How do I choose the right program for my health goals?",
+        "answer": "You can reach out through our Enquiry form or Contact page for a consultation to help determine the best program for your needs."
+      }
+    ]
+  },
+  "ProgramDetails": {
+    "weight-loss": {
+      "title": "Weight Loss & Fitness Management",
+      "eyebrow": "DNC Program 01",
+      "tagline": "Sustainable Weight Loss Built Around Real Food & Active Lifestyle Habits",
+      "overview": "Our Weight Loss & Fitness program focuses on achieving healthy, long-term body composition management through balanced everyday meals and active lifestyle habits. Instead of restrictive diets, we teach you how to nourish your body effectively.",
+      "highlights": [
+        "Personalized calorie & macro guidance tailored to your daily activity level",
+        "Home-cooked meal strategies using accessible, regional ingredients",
+        "Portion control awareness without counting every single gram",
+        "Weekly progress tracking, body measurement reviews & coaching feedback"
+      ],
+      "who_its_for": "Ideal for individuals struggling with weight fluctuations, crash diet burnout, or looking to establish a sustainable lifestyle for weight management.",
+      "benefits": [
+        "Sustainable weight loss without starvation or extreme restrictions",
+        "Improved daily energy levels and stamina",
+        "Better relationship with everyday home food choices",
+        "Long-term habit formation that prevents weight rebound"
+      ],
+      "faqs": [
+        {
+          "question": "Do I have to follow a strict diet or starve myself?",
+          "answer": "Not at all. DNC plans focus on portion awareness, wholesome nutrition, and balanced home meals rather than starvation diets."
+        },
+        {
+          "question": "How quickly can I expect to see weight loss results?",
+          "answer": "Healthy weight loss typically progresses at 0.5 to 1 kg per week, ensuring that Fat Loss is prioritized over muscle depletion."
+        },
+        {
+          "question": "Can I continue eating my regional Indian home food?",
+          "answer": "Yes! All DNC plans are designed around your existing regional food habits, making adherence simple and enjoyable."
+        }
+      ],
+      "testimonial_quote": "Lost 8 kg in 3 months without giving up my regular home meals. Coach Durga strategies made it so effortless!",
+      "testimonial_author": "Priya R., Hyderabad"
+    },
+    "nutrition-supplements": {
+      "title": "Nutrition & Supplementation Guidance",
+      "eyebrow": "DNC Program 02",
+      "tagline": "Optimize Micronutrient Balance & Responsible Supplementation Choices",
+      "overview": "Proper nutrition goes beyond basic calories. Our Nutrition & Supplements program helps you identify micronutrient gaps, understand essential vitamins and minerals, and make safe, evidence-based choices for your overall health.",
+      "highlights": [
+        "Comprehensive dietary nutrient gap assessment",
+        "Evidence-based advice on essential vitamins (Vitamin D, B12, Iron, Calcium)",
+        "Guidance on food synergy to enhance natural nutrient absorption",
+        "Safe supplement evaluation to avoid unneeded or low-quality products"
+      ],
+      "who_its_for": "Great for individuals with nutrient deficiencies, fatigue, dietary restrictions, or those looking to optimize their daily micronutrient intake.",
+      "benefits": [
+        "Enhanced immunity and vital metabolic function",
+        "Clear understanding of true supplement necessity vs marketing hype",
+        "Improved gut absorption through optimized food combinations",
+        "Targeted recovery and daily physical resilience"
+      ],
+      "faqs": [
+        {
+          "question": "Are supplements mandatory in this program?",
+          "answer": "No. Food comes first. Supplements are recommended only if blood tests or dietary assessments show clear micronutrient deficits."
+        },
+        {
+          "question": "Will you prescribe medical drugs?",
+          "answer": "No. DNC provides nutritional and lifestyle guidance. Medical conditions and prescriptions remain under the care of your physician."
+        },
+        {
+          "question": "How do I know which vitamins I am deficient in?",
+          "answer": "We review your routine diet logs and recent blood work to identify potential nutrient gaps accurately."
+        }
+      ],
+      "testimonial_quote": "Cleared up my vitamin deficiencies naturally through food first, taking essential supplements recommended after my blood work.",
+      "testimonial_author": "Anand K., Bengaluru"
+    },
+    "mindful-eating": {
+      "title": "Mindful Eating & Behavioral Habits",
+      "eyebrow": "DNC Program 03",
+      "tagline": "Reconnect with Natural Hunger Cues & Build a Peaceful Relationship with Food",
+      "overview": "Stress eating, emotional cravings, and rushed meals often disrupt digestion and health. The Mindful Eating program teaches you behavioral awareness techniques to enjoy your food fully while honoring your body's natural hunger and fullness signals.",
+      "highlights": [
+        "Techniques for identifying emotional hunger vs physiological hunger",
+        "Practical strategies for overcoming late-night cravings and impulse snacking",
+        "Chewing efficiency, slow eating practices, and digestive wellness tips",
+        "Building a sustainable, guilt-free mindset around all food groups"
+      ],
+      "who_its_for": "Designed for anyone dealing with stress eating, binge-restrict cycles, eating while distracted, or feeling guilty after eating.",
+      "benefits": [
+        "Reduction in emotional eating and stress-induced cravings",
+        "Better digestion, reduced bloating, and improved gut comfort",
+        "Greater meal satisfaction with smaller, balanced portions",
+        "Freedom from rigid diet rules and food anxiety"
+      ],
+      "faqs": [
+        {
+          "question": "What is mindful eating?",
+          "answer": "Mindful eating is paying deliberate attention to your food without distraction, recognizing hunger/fullness cues, and enjoying your meals without guilt."
+        },
+        {
+          "question": "Can mindful eating help with weight management?",
+          "answer": "Yes. By preventing overeating and emotional snacking, mindful eating naturally supports healthy weight regulation."
+        },
+        {
+          "question": "Do I have to eliminate sweets or cheat meals?",
+          "answer": "No food is strictly forbidden. We teach you how to savor your favorite treats mindfully without overindulging."
+        }
+      ],
+      "testimonial_quote": "I stopped late-night stress snacking completely. Learning to listen to my body true hunger cues changed everything.",
+      "testimonial_author": "Sneha M., Mumbai"
+    },
+    "personalized-nutrition": {
+      "title": "Personalized Nutrition & Holistic Coaching",
+      "eyebrow": "DNC Program 04",
+      "tagline": "1-on-1 Tailored Strategy Designed Specifically for Your Body & Schedule",
+      "overview": "No two individuals are identical. Our flagship Personalized Nutrition program offers complete 1-on-1 custom coaching that integrates your specific health objectives, work schedules, family diet, and long-term wellness targets into a cohesive strategy.",
+      "highlights": [
+        "1-on-1 personal consultation with Coach Durga",
+        "Customized weekly meal frameworks crafted for your specific routine",
+        "Direct continuous messaging support for meal reviews and queries",
+        "Adaptive plan adjustments for travel, dining out, and special occasions"
+      ],
+      "who_its_for": "Ideal for professionals with busy schedules, individuals with specific lifestyle constraints, or anyone seeking dedicated 1-on-1 expert accountability.",
+      "benefits": [
+        "A 100% custom plan that fits seamlessly into your daily life",
+        "High accountability and direct expert encouragement",
+        "Flexibility to handle social events, business travel, and holidays",
+        "Comprehensive transformation across energy, fitness, and nutrition"
+      ],
+      "faqs": [
+        {
+          "question": "How often will I check in with the coach?",
+          "answer": "Personalized Nutrition includes weekly 1-on-1 progress reviews along with ongoing daily chat support."
+        },
+        {
+          "question": "What happens when I travel or eat at restaurants?",
+          "answer": "We provide specific dining-out guidelines and smart restaurant choices tailored to your destination."
+        },
+        {
+          "question": "How do I get started with Personalized Coaching?",
+          "answer": "Click 'Enquire Now' on this page or fill out our Contact form to book your initial consultation with Coach Durga."
+        }
+      ],
+      "testimonial_quote": "The 1-on-1 guidance fit perfectly into my busy travel schedule. Having direct WhatsApp coaching kept me on track!",
+      "testimonial_author": "Rajesh V., Visakhapatnam"
+    },
+    "skin-health": {
+      "title": "Skin Health & Nutrition",
+      "eyebrow": "DNC Program 05",
+      "tagline": "Nourish Your Skin from Within Through Balanced Everyday Nutrition",
+      "overview": "Healthy, glowing skin starts with what you eat. Our Skin Health program focuses on how targeted nutrition and hydration habits can support clearer skin, reduce inflammation, and promote a natural glow — without expensive topicals or crash diets.",
+      "highlights": [
+        "Identifying skin-aggravating foods and common dietary triggers",
+        "Anti-inflammatory nutrition strategies for acne, pigmentation, and dullness",
+        "Hydration and micronutrient guidance (Zinc, Vitamin C, Omega-3s) for skin repair",
+        "Personalized food framework to support collagen production and skin elasticity"
+      ],
+      "who_its_for": "Ideal for individuals dealing with acne, dull skin, premature ageing, pigmentation, or anyone wanting to enhance their natural complexion through food and lifestyle habits.",
+      "benefits": [
+        "Clearer, brighter skin through targeted anti-inflammatory nutrition",
+        "Reduced skin inflammation, acne breakouts, and redness",
+        "Improved skin hydration and natural glow from within",
+        "Long-term skin resilience through sustainable healthy food habits"
+      ],
+      "faqs": [
+        {
+          "question": "Can food really impact my skin health?",
+          "answer": "Absolutely. Research consistently shows that diet plays a major role in skin conditions like acne, eczema, and premature ageing through inflammation and oxidative stress."
+        },
+        {
+          "question": "Which foods are best to avoid for clearer skin?",
+          "answer": "Common triggers include refined sugar, processed dairy, highly refined oils, and ultra-processed snacks — we'll identify your specific triggers through dietary analysis."
+        },
+        {
+          "question": "How long before I see improvements in my skin?",
+          "answer": "Many clients notice visible improvements in skin tone, hydration, and clarity within 4 to 8 weeks of consistent nutrition changes."
+        }
+      ],
+      "testimonial_quote": "My acne flare-ups reduced dramatically after adjusting my diet and hydration. My skin has a natural healthy glow now!",
+      "testimonial_author": "Kavya S., Chennai"
+    },
+    "bone-joint-health": {
+      "title": "Bone & Joint Health",
+      "eyebrow": "DNC Program 06",
+      "tagline": "Build Strong Bones & Healthy Joints Through Smart Everyday Nutrition",
+      "overview": "Strong bones and flexible joints are essential for long-term mobility and quality of life. Our Bone & Joint Health program focuses on evidence-based nutrition strategies to support bone density, reduce joint inflammation, and enhance overall mobility through everyday food choices.",
+      "highlights": [
+        "Calcium, Vitamin D3, and K2 dietary optimization for bone density",
+        "Anti-inflammatory food strategies for joint comfort and mobility",
+        "Protein adequacy and collagen-supportive nutrition for cartilage health",
+        "Lifestyle and movement guidance complementing your nutrition plan"
+      ],
+      "who_its_for": "Ideal for individuals with joint discomfort, osteopenia risk, postmenopausal women, athletes, or anyone wanting to proactively support long-term skeletal health.",
+      "benefits": [
+        "Stronger bones and improved mineral density through targeted nutrition",
+        "Reduced joint stiffness, swelling, and everyday discomfort",
+        "Better mobility, flexibility, and physical confidence",
+        "Proactive prevention of age-related bone density loss"
+      ],
+      "faqs": [
+        {
+          "question": "Is dairy the only way to get enough calcium?",
+          "answer": "Not at all. Excellent non-dairy calcium sources include sesame seeds, ragi (finger millet), green leafy vegetables, almonds, and fortified plant milks."
+        },
+        {
+          "question": "Can nutrition help with existing joint pain or arthritis?",
+          "answer": "Yes. Anti-inflammatory diets rich in Omega-3 fatty acids, antioxidants, and polyphenols have been shown to reduce joint inflammation and pain scores."
+        },
+        {
+          "question": "How does Vitamin D relate to bone health?",
+          "answer": "Vitamin D is essential for calcium absorption. Without adequate Vitamin D, the body cannot effectively utilize dietary calcium for bone mineralization."
+        }
+      ],
+      "testimonial_quote": "Adding calcium & anti-inflammatory foods eased my morning joint stiffness significantly. I feel so much more agile!",
+      "testimonial_author": "Suryanarayana M., Vijayawada"
+    }
+  },
+  "Testimonials": {
+    "eyebrow": "Success Stories",
+    "heading": "Real Experiences. Real Progress.",
+    "subtext": "Discover how personalized nutrition guidance and healthier food habits have helped people work toward their wellness goals.",
+    "missing_photo": "Photo Coming Soon",
+    "items": {
+      "1": {
+        "name": "Siva Gangadhar Reddy",
+        "result": "Weight Loss",
+        "quote": "Real client testimonial coming soon."
+      },
+      "3": {
+        "name": "Mohan Rao",
+        "result": "Weight Loss",
+        "quote": "Real client testimonial coming soon."
+      },
+      "2": {
+        "name": "Suhasini",
+        "result": "Weight Loss",
+        "quote": "Real client testimonial coming soon."
+      },
+      "4": {
+        "name": "Sindhuri",
+        "result": "Weight Loss",
+        "quote": "Real client testimonial coming soon."
+      },
+      "5": {
+        "name": "Deekshitha",
+        "result": "Weight Loss",
+        "quote": "Real client testimonial coming soon."
+      },
+      "6": {
+        "name": "Prashanth",
+        "result": "Weight Loss",
+        "quote": "Real client testimonial coming soon."
+      },
+      "7": {
+        "name": "Vanaja",
+        "result": "Weight Loss",
+        "quote": "Real client testimonial coming soon."
+      },
+      "8": {
+        "name": "Durga & Nageshwar Rao",
+        "result": "Weight Loss",
+        "quote": "Real client testimonial coming soon."
+      }
+    }
+  },
+  "CoachProfile": {
+    "eyebrow": "Meet Your Wellness Coach",
+    "name": "Durga Nagaeshwar Madam",
+    "title": "Senior Wellness Coach",
+    "bio_1": "Durga Nagaeshwar Madam provides personalized nutrition and wellness guidance based on the DNC Nutrition System and healthy food habits.",
+    "bio_2": "Her approach focuses on helping individuals understand better food choices, develop mindful eating habits, and make practical lifestyle changes that can be maintained over time.",
+    "credentials_note": "* Certified Wellness Coach specializing in customized nutrition plans, holistic lifestyle habit building, and dedicated 1-on-1 guidance.",
+    "faq_heading": "Coaching FAQs",
+    "faqs": [
+      {
+        "question": "Who is the senior wellness coach at DNC?",
+        "answer": "Durga Nagaeshwar Madam is a senior wellness coach specializing in comprehensive nutrition training and lifestyle guidance."
+      },
+      {
+        "question": "What is Coach Durga's approach to health and wellness?",
+        "answer": "Coach Durga focuses on empowering individuals with balanced nutrition knowledge, practical eating habits, and compassionate 1-on-1 coaching."
+      },
+      {
+        "question": "How are 1-on-1 coaching sessions conducted?",
+        "answer": "Coaching sessions are conducted through personalized consultations, detailed dietary assessments, and structured follow-up check-ins."
+      },
+      {
+        "question": "Can I get guidance for specific health or fitness goals?",
+        "answer": "Yes! Coach Durga designs custom strategies tailored to your specific health objectives, body requirements, and daily routine."
+      },
+      {
+        "question": "How can I schedule a consultation with Coach Durga?",
+        "answer": "You can fill out the enquiry form on our Contact page or call our team directly to book your initial consultation session."
+      }
+    ]
+  },
+  "Contact": {
+    "eyebrow": "Get Started",
+    "heading": "Start Your Nutrition & Wellness Journey",
+    "subtext": "Have questions about our programs? Contact DNC Wellness Centre to learn more about our nutrition and wellness guidance.",
+    "business_info": "DNC Wellness Centre",
+    "email_label": "Email",
+    "phone_label": "Phone",
+    "location_label": "Location",
+    "location_text": "DNC Wellness Centre",
+    "location_link_text": "(View on Google Maps)",
+    "form_heading": "Send an Enquiry",
+    "form_success_heading": "Message Sent Successfully",
+    "form_success_text": "Thank you for contacting DNC Wellness Centre. We have received your enquiry and will get back to you soon.",
+    "form_send_another": "Send Another Message",
+    "form_name_label": "Full Name",
+    "form_name_placeholder": "Enter your full name",
+    "form_phone_label": "Phone Number",
+    "form_phone_placeholder": "Enter your phone number",
+    "form_email_label": "Email Address",
+    "form_email_placeholder": "Enter your email address",
+    "form_program_label": "Interested In",
+    "form_program_placeholder": "Select a program...",
+    "form_message_label": "Message",
+    "form_message_placeholder": "Tell us how we can help...",
+    "form_error": "We could not submit your enquiry. Please check your details and try again.",
+    "form_submitting": "Sending...",
+    "form_submit": "Send Enquiry",
+    "programs": {
+      "Weight Loss & Fitness": "Weight Loss & Fitness",
+      "Nutrition & Supplements": "Nutrition & Supplements",
+      "Skin Health": "Skin Health",
+      "Bone & Joint Health": "Bone & Joint Health",
+      "Mindful Eating": "Mindful Eating",
+      "Personalized Nutrition": "Personalized Nutrition"
+    }
+  },
+  "FAQ": {
+    "eyebrow": "Got Questions?",
+    "heading": "Frequently Asked Questions on Nutrition & Wellness",
+    "subtext": "Everything you need to know about our personalized nutrition approach, wellness programs, and coaching guidance.",
+    "faqs": [
+      {
+        "question": "What is the core philosophy of DNC Wellness Centre?",
+        "answer": "DNC focuses on sustainable, evidence-based nutrition and lifestyle changes rather than quick fixes, restrictive fad diets, or starvation."
+      },
+      {
+        "question": "Will I regain weight after stopping the nutrition program?",
+        "answer": "Once you reach your ideal weight, you will have adopted sustainable food habits and lifestyle changes, enabling you to maintain your weight long-term without regaining it."
+      },
+      {
+        "question": "Who can benefit from DNC nutrition guidance?",
+        "answer": "Anyone looking to improve health, manage weight, develop mindful eating habits, optimize daily nutrition, or get personalized lifestyle support."
+      },
+      {
+        "question": "Are the nutrition plans customized for Indian regional home food?",
+        "answer": "Yes! All DNC plans are customized around your existing regional food habits, daily schedule, and home-cooked Indian meals so adherence is effortless."
+      },
+      {
+        "question": "Do I need to buy expensive imported food or special supplements?",
+        "answer": "No. We emphasize accessible, locally available, whole nutritious foods. Supplements are only suggested if specific nutrient deficits are identified."
+      },
+      {
+        "question": "How are 1-on-1 coaching sessions and progress check-ins conducted?",
+        "answer": "Coaching is conducted via personalized consultations, detailed dietary assessments, weekly progress tracking, and ongoing 1-on-1 support from Coach Durga."
+      },
+      {
+        "question": "How do I choose the right program for my personal health goals?",
+        "answer": "You can fill out our quick Enquiry form below or contact us directly to discuss your goals and choose the program best suited for you."
+      }
+    ]
+  },
+  "Showcase": {
+    "eyebrow": "Life at DNC",
+    "heading": "Wellness & Transformation Showcase",
+    "subtext": "Explore real moments, program highlights, and healthy lifestyle transformations at DNC Wellness Centre.",
+    "items": [
+      {
+        "title": "Personalized Diet Planning",
+        "tag": "Nutrition"
+      },
+      {
+        "title": "1-on-1 Health Coaching",
+        "tag": "Coaching"
+      },
+      {
+        "title": "Mindful Eating Habits",
+        "tag": "Lifestyle"
+      },
+      {
+        "title": "Sustainable Weight Management",
+        "tag": "Fitness"
+      },
+      {
+        "title": "Healthy Home Meals",
+        "tag": "Wellness"
+      },
+      {
+        "title": "Active Living & Support",
+        "tag": "Community"
+      }
+    ]
+  },
+  "Footer": {
+    "brand_name": "DNC Wellness Centre",
+    "tagline": "Personalized Nutrition & Healthy Food Habits",
+    "quick_links": "Quick Links",
+    "contact": "Contact Us",
+    "view_on_maps": "View on Google Maps",
+    "all_rights_reserved": "All rights reserved."
+  },
+  "Metadata": {
+    "title": "DNC Wellness Centre | Personalized Nutrition & Wellness",
+    "description": "DNC Wellness Centre provides personalized nutrition guidance, healthy eating programs, weight management support, and holistic wellness guidance based on individual needs and lifestyle."
+  }
+}

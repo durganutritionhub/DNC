@@ -5,28 +5,51 @@ export async function POST(request: Request) {
     const body = await request.json();
     const { name, phone, email, program, message } = body;
 
-    const accessKey = process.env.NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY || process.env.WEB3FORMS_ACCESS_KEY || "YOUR_ACCESS_KEY_HERE";
-
-    const response = await fetch("https://api.web3forms.com/submit", {
+    // Primary: Direct email delivery to durganutrition01@gmail.com via FormSubmit AJAX
+    const formSubmitResponse = await fetch("https://formsubmit.co/ajax/durganutrition01@gmail.com", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
-        "Accept": "application/json"
+        "Accept": "application/json",
+        "Referer": "https://dncwellness.com",
+        "Origin": "https://dncwellness.com"
       },
       body: JSON.stringify({
-        access_key: accessKey,
-        subject: `New DNC Wellness Enquiry from ${name}`,
-        from_name: "DNC Wellness Website",
-        name,
-        phone,
-        email,
-        program,
-        message
+        _subject: `New DNC Wellness Enquiry from ${name}`,
+        _template: "table",
+        Name: name,
+        Phone: phone || "Not provided",
+        Email: email,
+        "Selected Programs": program || "General Enquiry",
+        Message: message || "No message"
       })
     });
 
-    const data = await response.json();
-    return NextResponse.json(data);
+    const data = await formSubmitResponse.json();
+
+    // Fallback/Secondary: Web3Forms if access key is set in environment
+    const accessKey = process.env.NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY || process.env.WEB3FORMS_ACCESS_KEY;
+    if (accessKey && accessKey !== "YOUR_ACCESS_KEY_HERE") {
+      fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          "Accept": "application/json"
+        },
+        body: JSON.stringify({
+          access_key: accessKey,
+          subject: `New DNC Wellness Enquiry from ${name}`,
+          from_name: "DNC Wellness Website",
+          name,
+          phone,
+          email,
+          program,
+          message
+        })
+      }).catch(() => {});
+    }
+
+    return NextResponse.json({ success: true, data });
   } catch (error) {
     return NextResponse.json({ success: false, message: "Failed to send email enquiry" }, { status: 500 });
   }

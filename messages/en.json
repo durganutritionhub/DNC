@@ -6,14 +6,26 @@
     "testimonials": "Success Stories",
     "coach": "Our Coach",
     "contact": "Contact",
-    "language": "Language"
+    "language": "Language",
+    "all_programs": "All Programs",
+    "location": "Gajularamaram, Hyderabad",
+    "programs_menu": {
+      "weight-loss": "Weight Loss & Fitness",
+      "nutrition-supplements": "Nutrition & Supplements",
+      "mindful-eating": "Mindful Eating",
+      "personalized-nutrition": "Personalized Nutrition"
+    }
   },
   "Hero": {
     "eyebrow": "Nutrition & Wellness",
     "heading": "Better Nutrition. Better Health. Better Life.",
     "subtext": "Build healthier eating habits with personalized nutrition guidance, practical wellness strategies, and support designed around your lifestyle and health goals.",
     "cta_primary": "Get Started",
-    "cta_outline": "Explore Programs"
+    "cta_outline": "Explore Programs",
+    "badge_1": "1-on-1 Tailored Coaching",
+    "badge_2": "Sustainable Results",
+    "badge_label": "Holistic Wellness",
+    "badge_title": "Personalized Coaching"
   },
   "About": {
     "eyebrow": "Simple Nutrition for a Healthier Life",
@@ -46,7 +58,9 @@
         "question": "How does DNC ensure long-term, sustainable results?",
         "answer": "By focusing on behavioral habits, mindful eating, and 1-on-1 personalized guidance that fits into your long-term routine."
       }
-    ]
+    ],
+    "badge_label": "Science & Care",
+    "badge_title": "Evidence-Based Guidance"
   },
   "Stats": {
     "eyebrow": "Our Impact",
@@ -335,13 +349,13 @@
         "result": "Weight Loss",
         "quote": "Real client testimonial coming soon."
       },
-      "3": {
-        "name": "Mohan Rao",
+      "2": {
+        "name": "Suhasini",
         "result": "Weight Loss",
         "quote": "Real client testimonial coming soon."
       },
-      "2": {
-        "name": "Suhasini",
+      "3": {
+        "name": "Mohan Rao",
         "result": "Weight Loss",
         "quote": "Real client testimonial coming soon."
       },
@@ -437,7 +451,12 @@
       "Bone & Joint Health": "Bone & Joint Health",
       "Mindful Eating": "Mindful Eating",
       "Personalized Nutrition": "Personalized Nutrition"
-    }
+    },
+    "quick_enquiry": "Quick 1-Min Enquiry",
+    "select_programs_hint": "Select one or more",
+    "social_media": "Social Media",
+    "send_whatsapp": "Send via WhatsApp",
+    "send_email": "Send via Email"
   },
   "FAQ": {
     "eyebrow": "Got Questions?",
@@ -511,10 +530,29 @@
     "quick_links": "Quick Links",
     "contact": "Contact Us",
     "view_on_maps": "View on Google Maps",
-    "all_rights_reserved": "All rights reserved."
+    "all_rights_reserved": "All rights reserved.",
+    "about_link": "About",
+    "programs_link": "Programs",
+    "testimonials_link": "Testimonials",
+    "contact_link": "Contact",
+    "social_heading": "Social Media"
   },
   "Metadata": {
     "title": "DNC Wellness Centre | Personalized Nutrition & Wellness",
     "description": "DNC Wellness Centre provides personalized nutrition guidance, healthy eating programs, weight management support, and holistic wellness guidance based on individual needs and lifestyle."
+  },
+  "ProgramCommon": {
+    "breadcrumb_home": "Home",
+    "breadcrumb_programs": "Programs",
+    "enquire_cta": "Enquire About This Program",
+    "back_to_programs": "Back to All Programs",
+    "client_story": "Client Success Story",
+    "highlights_heading": "Key Features & Highlights",
+    "benefits_heading": "Expected Benefits",
+    "who_its_for_heading": "Who It's For",
+    "faq_title_prefix": "FAQs for",
+    "bottom_cta_heading": "Ready to Transform Your Health?",
+    "bottom_cta_subtext": "Book your consultation today and take the first step toward personalized nutrition and sustainable wellness.",
+    "bottom_cta_button": "Get Started with This Program"
   }
 }

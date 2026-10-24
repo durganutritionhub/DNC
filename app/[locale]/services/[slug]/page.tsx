@@ -98,6 +98,7 @@ export default async function ProgramDetailPage({
 
   const typedSlug = slug as SlugType;
   const t = await getTranslations({ locale, namespace: `ProgramDetails.${typedSlug}` });
+  const tCommon = await getTranslations({ locale, namespace: 'ProgramCommon' });
 
   // Get raw arrays safely
   const rawHighlights = t.raw('highlights');
@@ -114,9 +115,9 @@ export default async function ProgramDetailPage({
         
         {/* Breadcrumb Navigation */}
         <div className="flex items-center gap-2 text-sm text-text-muted mb-8">
-          <Link href="/" className="hover:text-primary-green transition-colors">Home</Link>
+          <Link href="/" className="hover:text-primary-green transition-colors">{tCommon('breadcrumb_home')}</Link>
           <span>/</span>
-          <Link href="/services" className="hover:text-primary-green transition-colors">Programs</Link>
+          <Link href="/services" className="hover:text-primary-green transition-colors">{tCommon('breadcrumb_programs')}</Link>
           <span>/</span>
           <span className="text-text-dark font-medium">{t('title')}</span>
         </div>
@@ -150,12 +151,12 @@ export default async function ProgramDetailPage({
           <div className="mt-8 flex flex-wrap gap-4">
             <Link href="/contact">
               <Button variant="primary" className="py-3 px-8 text-base">
-                Enquire About This Program
+                {tCommon('enquire_cta')}
               </Button>
             </Link>
             <Link href="/services">
               <Button variant="outline" className="py-3 px-8 text-base">
-                Back to All Programs
+                {tCommon('back_to_programs')}
               </Button>
             </Link>
           </div>
@@ -171,7 +172,7 @@ export default async function ProgramDetailPage({
               {[...Array(5)].map((_, i) => (
                 <Star key={i} className="w-4 h-4 fill-amber-400 text-amber-400" />
               ))}
-              <span className="text-xs font-bold text-accent-green ml-2 uppercase tracking-wider">Client Success Story</span>
+              <span className="text-xs font-bold text-accent-green ml-2 uppercase tracking-wider">{tCommon('client_story')}</span>
             </div>
             <p className="text-text-dark font-medium italic text-lg sm:text-xl leading-relaxed mb-2">
               "{t('testimonial_quote')}"
@@ -189,7 +190,7 @@ export default async function ProgramDetailPage({
           <div className="bg-white p-8 sm:p-10 rounded-3xl border border-primary-green/10 shadow-xs flex flex-col">
             <h2 className="text-2xl font-bold text-text-dark mb-6 flex items-center gap-3">
               <CheckCircle2 className="w-6 h-6 text-primary-green" />
-              Key Features & Highlights
+              {tCommon('highlights_heading')}
             </h2>
 
             <ul className="space-y-4 grow">
@@ -206,7 +207,7 @@ export default async function ProgramDetailPage({
           <div className="bg-white p-8 sm:p-10 rounded-3xl border border-primary-green/10 shadow-xs flex flex-col">
             <h2 className="text-2xl font-bold text-text-dark mb-6 flex items-center gap-3">
               <TrendingUp className="w-6 h-6 text-primary-green" />
-              Expected Benefits
+              {tCommon('benefits_heading')}
             </h2>
 
             <ul className="space-y-4 grow mb-8">
@@ -219,7 +220,7 @@ export default async function ProgramDetailPage({
             </ul>
 
             <div className="pt-6 border-t border-gray-100">
-              <h4 className="text-sm font-bold text-primary-green uppercase tracking-wider mb-2">Who It's For</h4>
+              <h4 className="text-sm font-bold text-primary-green uppercase tracking-wider mb-2">{tCommon('who_its_for_heading')}</h4>
               <p className="text-text-muted text-sm leading-relaxed">{t('who_its_for')}</p>
             </div>
           </div>
@@ -228,20 +229,20 @@ export default async function ProgramDetailPage({
 
         {/* Program-Specific FAQs */}
         <FAQAccordion
-          title={`FAQs for ${t('title')}`}
+          title={`${tCommon('faq_title_prefix')} ${t('title')}`}
           faqs={faqs}
           className="mt-8"
         />
 
         {/* Bottom CTA Banner */}
         <div className="mt-16 bg-primary-green/10 border border-primary-green/20 rounded-3xl p-8 sm:p-12 text-center max-w-4xl mx-auto">
-          <h3 className="text-2xl sm:text-3xl font-bold text-text-dark mb-4">Ready to Transform Your Health?</h3>
+          <h3 className="text-2xl sm:text-3xl font-bold text-text-dark mb-4">{tCommon('bottom_cta_heading')}</h3>
           <p className="text-text-muted text-lg mb-8 max-w-2xl mx-auto">
-            Book your consultation today and take the first step toward personalized nutrition and sustainable wellness.
+            {tCommon('bottom_cta_subtext')}
           </p>
           <Link href="/contact">
             <Button variant="primary" className="py-3 px-8 text-lg">
-              Get Started with This Program
+              {tCommon('bottom_cta_button')}
             </Button>
           </Link>
         </div>

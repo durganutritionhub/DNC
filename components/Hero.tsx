@@ -55,11 +55,11 @@ export function Hero() {
             <div className="flex flex-wrap items-center gap-4 sm:gap-6 pt-4 border-t border-primary-green/15 text-xs sm:text-sm font-medium text-text-muted w-full">
               <div className="flex items-center gap-2">
                 <CheckCircle2 className="w-4 h-4 text-accent-green shrink-0" />
-                <span>1-on-1 Tailored Coaching</span>
+                <span>{t('badge_1')}</span>
               </div>
               <div className="flex items-center gap-2">
                 <CheckCircle2 className="w-4 h-4 text-primary-green shrink-0" />
-                <span>Sustainable Results</span>
+                <span>{t('badge_2')}</span>
               </div>
             </div>
           </motion.div>
@@ -106,8 +106,8 @@ export function Hero() {
                 <Sparkles className="w-4 h-4 sm:w-5 sm:h-5 text-white" />
               </div>
               <div>
-                <p className="text-[11px] sm:text-xs text-text-muted font-medium">Holistic Wellness</p>
-                <p className="text-xs sm:text-sm text-text-dark font-bold">Personalized Coaching</p>
+                <p className="text-[11px] sm:text-xs text-text-muted font-medium">{t('badge_label')}</p>
+                <p className="text-xs sm:text-sm text-text-dark font-bold">{t('badge_title')}</p>
               </div>
             </motion.div>
 

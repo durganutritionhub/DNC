@@ -91,10 +91,10 @@ export function Footer() {
           <div>
             <h4 className="font-semibold text-white mb-3 sm:mb-4 text-sm sm:text-base">{t('quick_links')}</h4>
             <ul className="flex flex-col gap-2.5 text-xs sm:text-sm text-text-muted">
-              <li><Link href="/about" className="hover:text-primary-green transition-colors">About</Link></li>
-              <li><Link href="/services" className="hover:text-primary-green transition-colors">Programs</Link></li>
-              <li><Link href="/testimonials" className="hover:text-primary-green transition-colors">Testimonials</Link></li>
-              <li><Link href="/contact" className="hover:text-primary-green transition-colors">Contact</Link></li>
+              <li><Link href="/about" className="hover:text-primary-green transition-colors">{t('about_link')}</Link></li>
+              <li><Link href="/services" className="hover:text-primary-green transition-colors">{t('programs_link')}</Link></li>
+              <li><Link href="/testimonials" className="hover:text-primary-green transition-colors">{t('testimonials_link')}</Link></li>
+              <li><Link href="/contact" className="hover:text-primary-green transition-colors">{t('contact_link')}</Link></li>
             </ul>
           </div>
 

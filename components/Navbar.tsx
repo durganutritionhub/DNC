@@ -5,12 +5,18 @@ import { useTranslations, useLocale } from 'next-intl';
 import { Link, usePathname, useRouter } from '@/i18n/routing';
 import Image from 'next/image';
 
-const PROGRAMS = [
-  { slug: 'weight-loss',           label: 'Weight Loss & Fitness',      num: '01' },
-  { slug: 'nutrition-supplements', label: 'Nutrition & Supplements',     num: '02' },
-  { slug: 'mindful-eating',        label: 'Mindful Eating',             num: '03' },
-  { slug: 'personalized-nutrition',label: 'Personalized Nutrition',     num: '04' },
-];
+const PROGRAM_SLUGS = [
+  { slug: 'weight-loss',            num: '01' },
+  { slug: 'nutrition-supplements',  num: '02' },
+  { slug: 'mindful-eating',         num: '03' },
+  { slug: 'personalized-nutrition', num: '04' },
+] as const;
+
+const LANGUAGES = [
+  { code: 'en', name: 'English', shortName: 'EN', aria: 'Switch to English' },
+  { code: 'te', name: 'తెలుగు',  shortName: 'TE', aria: 'తెలుగు వెర్షన్‌కి మారండి' },
+  { code: 'hi', name: 'हिंदी',   shortName: 'HI', aria: 'हिंदी संस्करण पर जाएं' },
+] as const;
 
 export function Navbar() {
   const t = useTranslations('Navbar');
@@ -42,11 +48,6 @@ export function Navbar() {
     document.addEventListener('mousedown', handleClickOutside);
     return () => document.removeEventListener('mousedown', handleClickOutside);
   }, []);
-
-  const changeLanguage = (e: React.ChangeEvent<HTMLSelectElement>) => {
-    const nextLocale = e.target.value;
-    router.replace(pathname, { locale: nextLocale });
-  };
 
   const handleHomeClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
     if (pathname === '/' || pathname === '') {
@@ -80,7 +81,7 @@ export function Navbar() {
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
             </svg>
-            <span className="font-medium tracking-wide truncate max-w-[200px] sm:max-w-none">Gajularamaram, Hyderabad</span>
+            <span className="font-medium tracking-wide truncate max-w-[200px] sm:max-w-none">{t('location')}</span>
           </div>
 
           {/* Contact Details */}
@@ -191,9 +192,9 @@ export function Navbar() {
                     <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 10h16M4 14h10" />
                     </svg>
-                    All Programs
+                    {t('all_programs')}
                   </Link>
-                  {PROGRAMS.map((prog) => (
+                  {PROGRAM_SLUGS.map((prog) => (
                     <Link
                       key={prog.slug}
                       href={`/services/${prog.slug}`}
@@ -201,7 +202,9 @@ export function Navbar() {
                       className="flex items-center gap-3 px-4 py-2.5 hover:bg-primary-green/5 transition-colors group"
                     >
                       <span className="text-xs font-bold text-primary-green/60 w-6 shrink-0">{prog.num}</span>
-                      <span className="text-sm text-text-dark group-hover:text-primary-green transition-colors font-medium">{prog.label}</span>
+                      <span className="text-sm text-text-dark group-hover:text-primary-green transition-colors font-medium">
+                        {t(`programs_menu.${prog.slug}`)}
+                      </span>
                     </Link>
                   ))}
                 </div>
@@ -213,32 +216,53 @@ export function Navbar() {
           <Link href="/coach" className="text-white hover:opacity-80 transition-opacity font-medium">{t('coach')}</Link>
           <Link href="/contact" className="text-white hover:opacity-80 transition-opacity font-medium">{t('contact')}</Link>
           
-          <div className="flex items-center gap-4 border-l border-white/30 pl-6 ml-2">
-            <select 
-              value={locale} 
-              onChange={changeLanguage}
-              className="bg-white/15 text-white font-medium focus:outline-none cursor-pointer border border-white/25 rounded-lg px-2.5 py-1 text-sm"
-              aria-label={t('language')}
-            >
-              <option value="en" className="bg-[#8BBB92] text-white">English</option>
-              <option value="te" className="bg-[#8BBB92] text-white">తెలుగు</option>
-              <option value="hi" className="bg-[#8BBB92] text-white">हिंदी</option>
-            </select>
+          {/* Desktop Real <a href="..."> Language Switcher for Crawlers & Users */}
+          <div className="flex items-center gap-1 bg-white/15 p-1 rounded-xl border border-white/25 ml-2">
+            {LANGUAGES.map((lang) => {
+              const isActive = locale === lang.code;
+              return (
+                <Link
+                  key={lang.code}
+                  href={pathname || '/'}
+                  locale={lang.code}
+                  hrefLang={lang.code}
+                  aria-label={lang.aria}
+                  className={`px-3 py-1 rounded-lg transition-all font-semibold text-xs flex items-center justify-center ${
+                    isActive
+                      ? 'bg-white text-[#1C3729] shadow-xs'
+                      : 'text-white/90 hover:text-white hover:bg-white/15'
+                  }`}
+                >
+                  {lang.name}
+                </Link>
+              );
+            })}
           </div>
         </nav>
 
-        {/* Mobile Toggle & Language Switcher */}
-        <div className="flex items-center gap-3 lg:hidden">
-          <select 
-            value={locale} 
-            onChange={changeLanguage}
-            className="bg-white/20 text-xs sm:text-sm text-white font-bold focus:outline-none cursor-pointer border border-white/30 rounded-lg px-2 py-1 shadow-xs"
-            aria-label={t('language')}
-          >
-            <option value="en" className="bg-[#8BBB92] text-white">EN</option>
-            <option value="te" className="bg-[#8BBB92] text-white">TE</option>
-            <option value="hi" className="bg-[#8BBB92] text-white">HI</option>
-          </select>
+        {/* Mobile Header Language Switcher & Hamburger Toggle */}
+        <div className="flex items-center gap-2.5 lg:hidden">
+          <div className="flex items-center gap-0.5 bg-white/20 p-0.5 rounded-lg border border-white/30">
+            {LANGUAGES.map((lang) => {
+              const isActive = locale === lang.code;
+              return (
+                <Link
+                  key={lang.code}
+                  href={pathname || '/'}
+                  locale={lang.code}
+                  hrefLang={lang.code}
+                  aria-label={lang.aria}
+                  className={`px-2 py-1 rounded text-[11px] font-bold transition-all ${
+                    isActive
+                      ? 'bg-white text-[#1C3729] shadow-xs'
+                      : 'text-white/90 hover:text-white hover:bg-white/10'
+                  }`}
+                >
+                  {lang.shortName}
+                </Link>
+              );
+            })}
+          </div>
 
           <button 
             className="p-2 text-white focus:outline-none active:scale-95 transition-transform"
@@ -259,6 +283,32 @@ export function Navbar() {
       {/* Mobile Navigation Drawer */}
       {isMobileMenuOpen && (
         <div className="lg:hidden absolute top-full left-0 right-0 bg-[#8BBB92] text-white shadow-2xl py-4 px-6 flex flex-col gap-1 border-t border-white/20 max-h-[calc(100vh-100px)] overflow-y-auto">
+          {/* Mobile Drawer Language Selector */}
+          <div className="pb-3 mb-2 border-b border-white/15 flex flex-col gap-2">
+            <span className="text-[11px] font-bold text-white/80 uppercase tracking-wider">{t('language')}</span>
+            <div className="grid grid-cols-3 gap-2">
+              {LANGUAGES.map((lang) => {
+                const isActive = locale === lang.code;
+                return (
+                  <Link
+                    key={lang.code}
+                    href={pathname || '/'}
+                    locale={lang.code}
+                    hrefLang={lang.code}
+                    onClick={() => setIsMobileMenuOpen(false)}
+                    className={`py-2 px-2 rounded-xl text-center text-xs font-bold transition-all ${
+                      isActive
+                        ? 'bg-white text-[#1C3729] shadow-md'
+                        : 'bg-white/15 text-white hover:bg-white/25'
+                    }`}
+                  >
+                    {lang.name}
+                  </Link>
+                );
+              })}
+            </div>
+          </div>
+
           <Link href="/" onClick={handleHomeClickMobile} className="text-white hover:opacity-80 py-3 text-base font-semibold border-b border-white/10">{t('home')}</Link>
           <Link href="/about" onClick={() => setIsMobileMenuOpen(false)} className="text-white hover:opacity-80 py-3 text-base font-semibold border-b border-white/10">{t('about')}</Link>
 
@@ -285,9 +335,9 @@ export function Navbar() {
                   onClick={() => { setIsMobileMenuOpen(false); setIsMobileProgramsOpen(false); }}
                   className="text-sm font-extrabold text-white py-2 hover:opacity-80 flex items-center gap-2"
                 >
-                  <span>→</span> All Programs
+                  <span>→</span> {t('all_programs')}
                 </Link>
-                {PROGRAMS.map((prog) => (
+                {PROGRAM_SLUGS.map((prog) => (
                   <Link
                     key={prog.slug}
                     href={`/services/${prog.slug}`}
@@ -295,7 +345,7 @@ export function Navbar() {
                     className="text-sm text-white/90 hover:text-white py-2 transition-colors flex items-center gap-2"
                   >
                     <span className="text-white/60 font-bold">{prog.num}.</span>
-                    {prog.label}
+                    {t(`programs_menu.${prog.slug}`)}
                   </Link>
                 ))}
               </div>

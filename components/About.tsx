@@ -74,8 +74,8 @@ export function About() {
                 <Leaf className="w-4 h-4 sm:w-5 sm:h-5 text-white" />
               </div>
               <div>
-                <p className="text-[11px] sm:text-xs text-text-muted font-medium">Science & Care</p>
-                <p className="text-xs sm:text-sm text-text-dark font-bold">Evidence-Based Guidance</p>
+                <p className="text-[11px] sm:text-xs text-text-muted font-medium">{t('badge_label')}</p>
+                <p className="text-xs sm:text-sm text-text-dark font-bold">{t('badge_title')}</p>
               </div>
             </div>
 

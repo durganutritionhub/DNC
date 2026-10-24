@@ -9,6 +9,7 @@ import { routing } from '@/i18n/routing';
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { WhatsAppButton } from "@/components/WhatsAppButton";
+import { constructSEOMetadata } from "@/lib/seo";
 
 const poppins = Poppins({
   variable: "--font-poppins",
@@ -38,21 +39,12 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: 'Metadata' });
 
-  return {
+  return constructSEOMetadata({
+    locale,
+    path: '',
     title: t('title'),
     description: t('description'),
-    openGraph: {
-      title: t('title'),
-      description: t('description'),
-    },
-    alternates: {
-      languages: {
-        'en': '/en',
-        'te': '/te',
-        'hi': '/hi'
-      }
-    }
-  };
+  });
 }
 
 export default async function RootLayout({

@@ -1,10 +1,12 @@
 import React from 'react';
+import type { Metadata } from 'next';
 import { getTranslations } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 import { Link } from '@/i18n/routing';
 import { FAQAccordion, FAQItem } from '@/components/FAQAccordion';
 import { Button } from '@/components/Button';
 import { Quote, Star, CheckCircle2, TrendingUp, HelpCircle } from 'lucide-react';
+import { constructSEOMetadata } from '@/lib/seo';
 
 // Valid program slugs
 const VALID_SLUGS = [
@@ -17,6 +19,37 @@ const VALID_SLUGS = [
 ] as const;
 
 type SlugType = (typeof VALID_SLUGS)[number];
+
+export function generateStaticParams() {
+  const locales = ['en', 'te', 'hi'];
+  const params: { locale: string; slug: string }[] = [];
+  for (const locale of locales) {
+    for (const slug of VALID_SLUGS) {
+      params.push({ locale, slug });
+    }
+  }
+  return params;
+}
+
+export async function generateMetadata({
+  params
+}: {
+  params: Promise<{ locale: string; slug: string }>;
+}): Promise<Metadata> {
+  const { locale, slug } = await params;
+  if (!VALID_SLUGS.includes(slug as SlugType)) {
+    return {};
+  }
+  const typedSlug = slug as SlugType;
+  const t = await getTranslations({ locale, namespace: `ProgramDetails.${typedSlug}` });
+
+  return constructSEOMetadata({
+    locale,
+    path: `/services/${slug}`,
+    title: `${t('title')} | DNC Wellness Centre`,
+    description: t('overview'),
+  });
+}
 
 // Icon mapping per program
 const PROGRAM_ICONS: Record<SlugType, React.ReactNode> = {
